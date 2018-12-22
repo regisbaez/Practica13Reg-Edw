@@ -20,7 +20,7 @@ public class Sensor {
 
         SimpleDateFormat format = new SimpleDateFormat("YYYY-MM-dd HH:mm:ss");
         Date date = new Date();
-
+        //random generated numbers for data test
         setId((int) (Math.random() * 100) + 1);
         setFecha(format.format(date));
         setHumedad((long) (Math.random() * 100) + 1);

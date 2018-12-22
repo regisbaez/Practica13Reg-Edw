@@ -30,7 +30,7 @@ public class Main {
         webSocket("/nuevoMensaje", Websocket.class);
 
         FreeMarkerEngine freeMarkerEngine = new FreeMarkerEngine(configuration);
-
+        //check de path
         get("/", (request, response) -> new ModelAndView(null, "index.ftl"),freeMarkerEngine);
 
         Consumidor servicioConsumidor = new Consumidor(cola);
